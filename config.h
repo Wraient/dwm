@@ -37,7 +37,7 @@ static const Rule rules[] = {
 	{ "firefox",        	NULL,     NULL,           1 << 2,    0,          0,          -1,        -1 },
 	{ "TelegramDesktop",	NULL,     NULL,           1 << 3,    0,          0,           0,        -1 },
 	{ "discord",        	NULL,     NULL,           1 << 3,    0,          0,           0,        -1 },
-	{ NULL,                 NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
+/* { NULL,                 NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, */  /* xev */
 };
 
 /* layout(s) */
