@@ -1,8 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char *volup[]   = { "/path/to/vol_ctrl.sh", "up",   NULL };
-static const char *voldown[] = { "/path/to/vol_ctrl.sh", "down", NULL };
 
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
@@ -71,12 +69,7 @@ static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-//{ 0,                       XF86XK_AudioLowerVolume, spawn,       {.v = voldown } },
-//{ 0,                       XF86XK_AudioRaiseVolume, spawn,       {.v = volup } },
 
-
-	{ 0,                            XK_Print,  spawn,          SHCMD("flameshot gui") }, // `flameshot gui` when pressed `prt scr`
-	{ MODKEY,                       XK_Print,  spawn,          SHCMD("flameshot full --clipboard") }, // `flameshot full --clipboard` when pressed `win + prt scr`
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
